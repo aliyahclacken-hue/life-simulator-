@@ -988,7 +988,7 @@ function medicalEvent(t){
   if(t==='hospital'){c.health='being assessed';msg=c.name+' goes to hospital for assessment.'}
   if(t==='triage'){c.health='triaged';msg='Triage checks '+c.name+'.'}
   if(t==='tests'){playSound('beep',1000);msg='Tests are done for '+c.name+'.'}
-  if(t==='ward'){c.health='on ward';msg=c.name+' is admitted to the children\\'s ward.'}
+  if(t==='ward'){c.health='on ward';msg=c.name+' is admitted to the children\'s ward.'}
   if(t==='discharge'){c.health='recovering';c.illness='';c.need='';msg=c.name+' is discharged home with advice.'}
   notice(msg);
   openMedical();
